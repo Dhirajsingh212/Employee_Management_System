@@ -3,11 +3,10 @@ import { Button } from "@/components/ui/button"
 import {
   Dialog,
   DialogContent,
-  DialogDescription,
   DialogFooter,
   DialogHeader,
   DialogTitle,
-  DialogTrigger,
+  DialogTrigger
 } from "@/components/ui/dialog"
 import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
@@ -20,21 +19,30 @@ export function NewEmployeeModel() {
       </DialogTrigger>
       <DialogContent className="sm:max-w-[425px]">
         <DialogHeader>
-          <DialogTitle>Edit profile</DialogTitle>
-          <DialogDescription>
-            Make changes to your profile here. Click save when you're done.
-          </DialogDescription>
+          <DialogTitle className="text-center">Add new employee details</DialogTitle>
         </DialogHeader>
         <div className="grid gap-4 py-4">
-          <div className="grid grid-cols-4 items-center gap-4">
+          <div className="grid grid-cols-2 items-center gap-4">
             <Label htmlFor="name" className="text-right">
-              Name
+              First Name
             </Label>
             <Input id="name"  className="col-span-3" />
           </div>
-          <div className="grid grid-cols-4 items-center gap-4">
+          <div className="grid grid-cols-2 items-center gap-4">
             <Label htmlFor="username" className="text-right">
-              Username
+              Last Name
+            </Label>
+            <Input id="username" className="col-span-3" />
+          </div>
+          <div className="grid grid-cols-2 items-center gap-4">
+            <Label htmlFor="username" className="text-right">
+              Department
+            </Label>
+            <Input id="username" className="col-span-3" />
+          </div>
+          <div className="grid grid-cols-2 items-center gap-4">
+            <Label htmlFor="username" className="text-right">
+              Email
             </Label>
             <Input id="username" className="col-span-3" />
           </div>
